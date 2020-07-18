@@ -10,17 +10,17 @@ There is another team who actually implemented a more aggressive app that achiev
 
 This is a todo list app that shows movies in columns, and once you click on the movie poster, a movie detail page would pop up providing more detailed infomration about the movie and recommendate related movies. Users can use the search page to search for movies to add into the list.
 
-<center class="half">
-    <img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots.png?raw=true" height="400"><img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots%20copy.png?raw=true" height="400"><img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots%20copy%202.png?raw=true" height="400"><img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots%20copy%203.png?raw=true" height="400">
-</center>
+<p float="left">
+    <img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots.png?raw=true" height="400">&nbsp<img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots%20copy.png?raw=true" height="400">&nbsp<img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots%20copy%202.png?raw=true" height="400">&nbsp<img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/6.5-inch%20screenshots%20copy%203.png?raw=true" height="400">
+</p>
 
 
 
 This app also optimized for 5.5 inch devices and 12.9 inch devices. And with the update on SwiftUI released on WWDC 2020 this year, cross plartform (iOS, iPadOS, macOS) appliucation user experience would be more unified and effitient for users, and as a developer, I love this update very much!
 
-<center class="half">
-    <img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/5.5-inch%20screenshots%20copy.png?raw=true" height="400"><img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/12.9-inch%20iPad%20Pro%20copy.png?raw=true" height="400">
-</center>
+<p float="left">
+    <img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/5.5-inch%20screenshots%20copy.png?raw=true" height="400">&nbsp<img src="https://github.com/fan-zhang-sv/Movie-Errands/blob/master/images/12.9-inch%20iPad%20Pro%20copy.png?raw=true" height="400">
+</p>
 
 
 ## Installation
