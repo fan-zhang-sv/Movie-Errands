@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RbU-5O-erj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Errands-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MoviesViewController" customModule="Movie_Errands" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="S63-hE-kn1">
+                                <rect key="frame" x="25" y="390.5" width="364" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Movies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asW-QH-0a7">
+                                        <rect key="frame" x="123.5" y="0.0" width="117.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Library is empty. Movies that you add to your library will appear here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4U3-rM-VOU">
+                                        <rect key="frame" x="16.5" y="66" width="331" height="49"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4U3-rM-VOU" firstAttribute="top" secondItem="asW-QH-0a7" secondAttribute="bottom" constant="10" id="aGL-jq-r8h"/>
+                                    <constraint firstAttribute="bottom" secondItem="4U3-rM-VOU" secondAttribute="bottom" id="bqH-wD-l1R"/>
+                                    <constraint firstItem="asW-QH-0a7" firstAttribute="top" secondItem="S63-hE-kn1" secondAttribute="top" id="t7o-Cz-7dY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S63-hE-kn1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7d5-oM-KYw"/>
+                            <constraint firstItem="S63-hE-kn1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="FC7-Qx-6jz"/>
+                            <constraint firstAttribute="trailing" secondItem="S63-hE-kn1" secondAttribute="trailing" constant="25" id="Fre-QE-LSH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie Errands" id="YqN-17-cug"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="118.52678571428571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DUO-Uu-M4d">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RbU-5O-erj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EmK-2n-ecA">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LFn-dH-RSe" kind="relationship" relationship="viewControllers" id="Oi0-ZK-ERL"/>
+                        <segue destination="6du-y4-CWD" kind="relationship" relationship="viewControllers" id="BjA-bA-3vF"/>
+                        <segue destination="UCU-bK-qAY" kind="relationship" relationship="viewControllers" id="JEq-rf-Drv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMj-gf-jLY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+        <!--Movie Errands-->
+        <scene sceneID="7oK-27-NPL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LFn-dH-RSe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movie Errands" image="tv.fill" catalog="system" id="P1k-5U-1vj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZSy-Gy-YSw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EMB-gc-GRu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bl6-aS-cWO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="118.52678571428571"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="WMM-Yq-dub">
+            <objects>
+                <viewController id="7Ti-6V-D25" customClass="ExploreViewController" customModule="Movie_Errands" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dG3-On-I7x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7zE-Xg-Z1h"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Explore" id="nlO-ke-wXA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIj-1W-J91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="856"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="Djc-fv-6Qa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6du-y4-CWD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Explore" image="tray.full.fill" catalog="system" id="iUb-7j-zAF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fgV-kf-1CE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Ti-6V-D25" kind="relationship" relationship="rootViewController" id="od2-Ia-5Xz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xds-UW-fG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="856"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="HkT-50-COg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCU-bK-qAY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="qZ0-BY-7Yh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dek-On-yBV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bH0-lS-ol4" kind="relationship" relationship="rootViewController" id="Q8W-MI-Owm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfd-OB-wc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="1590"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="KaI-iG-N1V">
+            <objects>
+                <viewController id="bH0-lS-ol4" customClass="SearchViewController" customModule="Movie_Errands" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPE-IK-Qpi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="gPC-8C-7Qm">
+                                <rect key="frame" x="25" y="390.5" width="364" height="115"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Movies by Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-hE-Pnw">
+                                        <rect key="frame" x="48" y="0.0" width="268.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by The Movie Database API. Implemented by Felix." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5I-v0-8yy">
+                                        <rect key="frame" x="18.5" y="66" width="327.5" height="49"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zsh-hE-Pnw" firstAttribute="top" secondItem="gPC-8C-7Qm" secondAttribute="top" id="btg-3w-Ev8"/>
+                                    <constraint firstItem="d5I-v0-8yy" firstAttribute="top" secondItem="zsh-hE-Pnw" secondAttribute="bottom" constant="10" id="oNg-e9-dxX"/>
+                                    <constraint firstAttribute="bottom" secondItem="d5I-v0-8yy" secondAttribute="bottom" id="u8Z-VH-nAR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gPC-8C-7Qm" firstAttribute="leading" secondItem="06c-IS-ZAW" secondAttribute="leading" constant="25" id="ECj-dg-jG1"/>
+                            <constraint firstItem="gPC-8C-7Qm" firstAttribute="centerY" secondItem="PPE-IK-Qpi" secondAttribute="centerY" id="NBP-h2-Lge"/>
+                            <constraint firstAttribute="trailing" secondItem="gPC-8C-7Qm" secondAttribute="trailing" constant="25" id="UuF-Gf-t6o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="06c-IS-ZAW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="dZp-6D-9Ns"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRX-1O-DsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="1590"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="tray.full.fill" catalog="system" width="128" height="88"/>
+        <image name="tv.fill" catalog="system" width="128" height="93"/>
+    </resources>
+</document>

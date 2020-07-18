@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.2.1)
+  - SwiftyJSON (5.0.0)
+  - URLImage (0.9.15)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwiftyJSON
+  - URLImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftyJSON
+    - URLImage
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  URLImage: 1adef9b81f071fc2fc13a1a87ff882c0a694d48b
+
+PODFILE CHECKSUM: a6bfc9b9391caa10f9b36400cebffa851d597a52
+
+COCOAPODS: 1.9.0
